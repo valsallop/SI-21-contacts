@@ -15,7 +15,7 @@ var connection = mysql.createConnection({
 connection.connect();
 
 var app= express();
-
+app.set('port', (process.env.PORT || 5000));
 var dbFileName = path.join(__dirname,'contacts.json');
 var db= new DataStore({
 filename: dbFileName,
@@ -115,5 +115,6 @@ app.delete('/contacts/:id',function(req,res){
 
 
 
-app.listen(8080);
-console.log('Server is on fire');
+app.listen(app.get('port'), function() {
+  console.log('SI - Simple REST service run: ', app.get('port'));
+});
