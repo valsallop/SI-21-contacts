@@ -1,0 +1,31 @@
+{
+  "name": "contacts",
+  "version": "1.0.0",
+  "description": "SI Servicio REST simple",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "express": "^4.13.3",
+    "mysql": "^2.9.0",
+    "nedb": "^1.4.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/valsallop/SI-21-contacts.git"
+  },
+  "keywords": [
+    "example",
+    "heroku"
+  ],
+  "author": "valsallop",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/valsallop/SI-21-contacts/issues"
+  },
+  "homepage": "https://github.com/valsallop/SI-21-contacts#readme"
+}
